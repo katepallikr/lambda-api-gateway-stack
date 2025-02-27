@@ -24,8 +24,9 @@ required_providers {
 }
 
 provider "aws" "this" {
-  config {
-    region = var.region
+for_each = var.regions  
+config {
+    region = each.value
 
     assume_role_with_web_identity {
       role_arn           = var.role_arn
