@@ -12,6 +12,7 @@ variable "identity_token" {
 
 variable "role_arn" {
   type = string
+  default = "arn:aws:iam::798714130597:role/stacks-hashicorp-kranthi-Demo"
 }
 
 variable "default_tags" {
