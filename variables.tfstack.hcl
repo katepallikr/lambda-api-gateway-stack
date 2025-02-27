@@ -2,7 +2,7 @@
 # SPDX-License-Identifier: MPL-2.0
 
 variable "region" {
-  type = string
+  type = set(string)
 }
 
 variable "identity_token" {
